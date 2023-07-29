@@ -28,7 +28,7 @@ $addTodo = function () {
                     <h2 class="text-2xl font-semibold">Todos</h2>
                 </header>
 
-                @if (empty($todos))
+                @if ($todos->isEmpty())
                     <p class="mt-4 text-gray-500">
                         {{ __("You don't have any todos right now.") }}
                     </p>
