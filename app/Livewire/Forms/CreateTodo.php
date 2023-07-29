@@ -16,5 +16,7 @@ class CreateTodo extends Form
         $validated = $this->validate();
 
         Todo::create($validated);
+
+        $this->reset('description');
     }
 }
